@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -17,8 +18,9 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20 bg-gradient-to-br from-primary via-primary/95 to-primary/90">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2djhoLThWMTZoOHptLTE4IDB2OGgtOFYxNmg4em0wIDE4djhoLThWMzRoOHptMTggMHY4aC04VjM0aDh6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-10"></div>
+    <section id="hero" className="relative min-h-screen flex items-center pt-20">
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroBackground})` }}></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/80 to-primary/75"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
