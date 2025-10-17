@@ -8,7 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Slogan */}
           <div className="space-y-4">
-            <img src={logo} alt="Importadora Costa" className="h-16 w-auto" />
+            <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center p-3">
+              <img src={logo} alt="Importadora Costa" className="w-full h-full object-contain" />
+            </div>
             <p className="text-sm opacity-90">
               Potência em movimento, com segurança.
             </p>
