@@ -42,5 +42,5 @@
 }
 
 #montesite-footer-badge {
-  bottom: 0px !important;
+  display: none !important;
 }
