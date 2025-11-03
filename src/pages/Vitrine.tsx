@@ -16,15 +16,15 @@ const Vitrine = () => {
       {/* Badge MonteSite */}
       <div 
         id="montesite-footer-badge"
-        className="fixed bottom-0 left-0 right-0 h-[63px] bg-background border-t border-border flex items-center justify-center z-40"
+        className="fixed bottom-0 left-0 right-0 h-[63px] bg-white border-t border-gray-200 flex items-center justify-center z-40"
       >
         <a 
           href="https://montesite.com.br" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-sm text-muted-foreground hover:text-primary transition-colors"
+          className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
         >
-          Desenvolvido por <span className="font-semibold">MonteSite</span>
+          Desenvolvido por <span className="font-semibold text-gray-900">MonteSite</span>
         </a>
       </div>
     </div>
