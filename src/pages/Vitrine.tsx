@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 
 const Vitrine = () => {
   return (
-    <div className="min-h-screen">
+    <div className="h-screen overflow-hidden">
       <Header />
       <div className="pt-24">
         <iframe
