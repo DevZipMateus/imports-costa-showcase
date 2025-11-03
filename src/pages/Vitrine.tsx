@@ -7,7 +7,7 @@ const Vitrine = () => {
       <iframe 
         src="https://v4.egestor.com.br/vitrine/?s=importscosta" 
         className="w-full flex-1"
-        style={{ height: 'calc(100vh - 80px - 63px)' }}
+        style={{ height: 'calc(100vh - 80px)' }}
         title="Demonstração de Vitrine"
       />
     </div>
