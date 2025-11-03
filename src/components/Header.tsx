@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -12,6 +15,20 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const handleNavigation = (href: string, isPage?: boolean) => {
+    if (isPage) {
+      navigate(href);
+      setIsMobileMenuOpen(false);
+    } else {
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => scrollToSection(href), 100);
+      } else {
+        scrollToSection(href);
+      }
+    }
+  };
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -38,22 +55,26 @@ const Header = () => {
     label: "Serviços",
     href: "servicos"
   }, {
+    label: "Vitrine",
+    href: "/vitrine",
+    isPage: true
+  }, {
     label: "Contato",
     href: "contato"
   }];
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-sm shadow-md" : "bg-background"}`}>
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <button onClick={() => scrollToSection("hero")} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <button onClick={() => navigate("/")} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <img src={logo} alt="Imports Costa Logo" className="h-24 w-auto" />
           </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
-            {navItems.map(item => <button key={item.href} onClick={() => scrollToSection(item.href)} className="text-foreground hover:text-primary transition-colors font-medium">
+            {navItems.map(item => <button key={item.href} onClick={() => handleNavigation(item.href, item.isPage)} className="text-foreground hover:text-primary transition-colors font-medium">
                 {item.label}
               </button>)}
-            <Button onClick={() => scrollToSection("contato")} variant="default" className="bg-primary hover:bg-primary/90">
+            <Button onClick={() => handleNavigation("contato")} variant="default" className="bg-primary hover:bg-primary/90">
               Fale conosco
             </Button>
           </div>
@@ -66,10 +87,10 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && <div className="md:hidden mt-4 pb-4 flex flex-col gap-3">
-            {navItems.map(item => <button key={item.href} onClick={() => scrollToSection(item.href)} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
+            {navItems.map(item => <button key={item.href} onClick={() => handleNavigation(item.href, item.isPage)} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
                 {item.label}
               </button>)}
-            <Button onClick={() => scrollToSection("contato")} variant="default" className="bg-primary hover:bg-primary/90 w-full mt-2">
+            <Button onClick={() => handleNavigation("contato")} variant="default" className="bg-primary hover:bg-primary/90 w-full mt-2">
               Fale conosco
             </Button>
           </div>}
