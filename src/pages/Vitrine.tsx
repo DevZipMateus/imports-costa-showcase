@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 
 const Vitrine = () => {
   return (
-    <div className="h-screen overflow-hidden flex flex-col">
+    <div className="h-screen overflow-hidden flex flex-col pt-20">
       <Header />
       <iframe 
         src="https://v4.egestor.com.br/vitrine/?s=importscosta" 
