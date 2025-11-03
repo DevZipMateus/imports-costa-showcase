@@ -2,15 +2,16 @@ import Header from "@/components/Header";
 
 const Vitrine = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen">
       <Header />
-      <main className="flex-1 pt-20">
+      <div className="pt-20">
         <iframe
           src="https://v4.egestor.com.br/vitrine/?s=importscosta"
-          className="w-full h-full border-0"
+          className="w-full border-0"
+          style={{ height: 'calc(100vh - 80px)' }}
           title="Vitrine Imports Costa"
         />
-      </main>
+      </div>
     </div>
   );
 };
