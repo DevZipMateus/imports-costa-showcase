@@ -4,7 +4,7 @@ const Vitrine = () => {
   return (
     <div className="h-screen overflow-hidden">
       <Header />
-      <div>
+      <div className="pt-24">
         <iframe
           src="https://v4.egestor.com.br/vitrine/?s=importscosta"
           className="w-full border-0"
