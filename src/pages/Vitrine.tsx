@@ -4,11 +4,11 @@ const Vitrine = () => {
   return (
     <div className="h-screen overflow-hidden">
       <Header />
-      <div className="pt-32">
+      <div className="pt-32 pb-[63px]">
         <iframe
           src="https://v4.egestor.com.br/vitrine/?s=importscosta"
           className="w-full border-0"
-          style={{ height: 'calc(100vh - 128px)' }}
+          style={{ height: 'calc(100vh - 191px)' }}
           title="Vitrine Imports Costa"
         />
       </div>
