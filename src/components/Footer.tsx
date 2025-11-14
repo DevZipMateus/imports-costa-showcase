@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -33,6 +33,15 @@ const Footer = () => {
               >
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>importscosta@gmail.com</span>
+              </a>
+              <a
+                href="https://www.instagram.com/imports_costa_ms"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2 hover:opacity-80 transition-opacity"
+              >
+                <Instagram className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>@imports_costa_ms</span>
               </a>
             </div>
           </div>
