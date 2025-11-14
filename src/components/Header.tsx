@@ -68,7 +68,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <button onClick={() => navigate("/")} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <img src={logo} alt="Imports Costa Logo" className="h-24 w-auto" />
+            <img src={logo} alt="Imports Costa Logo" className="h-16 w-auto" />
           </button>
 
           {/* Desktop Navigation */}
