@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import heroBackground from "@/assets/hero-truck.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -35,7 +38,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
             <Button 
               size="lg"
-              onClick={() => scrollToSection("servicos")}
+              onClick={() => navigate("/vitrine")}
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-8 py-6 text-lg"
             >
               Conheça nosso catálogo
