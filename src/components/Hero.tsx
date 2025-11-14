@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20">
+    <section id="hero" className="relative min-h-screen flex items-center pt-32">
       <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroBackground})` }}></div>
       <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/80 to-black/75"></div>
       
