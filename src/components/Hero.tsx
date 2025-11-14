@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import heroBackground from "@/assets/hero-truck.jpg";
 
 const Hero = () => {
@@ -37,10 +36,9 @@ const Hero = () => {
             <Button 
               size="lg"
               onClick={() => scrollToSection("servicos")}
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-8 py-6 text-lg group"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-8 py-6 text-lg"
             >
-              Nossos serviços
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              Conheça nosso catálogo
             </Button>
             <Button 
               size="lg"
