@@ -24,7 +24,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-bebas text-6xl md:text-8xl lg:text-9xl font-bold text-primary-foreground mb-6 animate-fade-in tracking-wider drop-shadow-2xl">
+          <h1 className="font-oswald text-6xl md:text-8xl lg:text-9xl font-bold text-primary-foreground mb-6 animate-fade-in tracking-wide drop-shadow-2xl">
             IMPORTS COSTA
           </h1>
           <h2 className="text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 mb-8 font-light animate-fade-in" style={{ animationDelay: "0.2s" }}>
