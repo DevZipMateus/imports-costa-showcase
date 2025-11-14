@@ -26,10 +26,10 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-oswald text-6xl md:text-8xl lg:text-9xl font-bold text-primary-foreground mb-6 animate-fade-in tracking-wide drop-shadow-[0_15px_25px_rgba(0,0,0,1)]" style={{ textShadow: '6px 6px 12px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.7), -2px -2px 8px rgba(0,0,0,0.5)' }}>
+          <h1 className="font-oswald text-6xl md:text-8xl lg:text-9xl font-bold text-primary-foreground mb-6 animate-fade-in tracking-wide drop-shadow-[0_20px_35px_rgba(0,0,0,1)]" style={{ textShadow: '8px 8px 16px rgba(0,0,0,1), 0 0 60px rgba(0,0,0,0.9), -3px -3px 12px rgba(0,0,0,0.7), 4px 4px 25px rgba(0,0,0,0.8)' }}>
             IMPORTS COSTA
           </h1>
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 mb-8 font-light animate-fade-in drop-shadow-[0_15px_25px_rgba(0,0,0,1)]" style={{ animationDelay: "0.2s", textShadow: '6px 6px 12px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.7), -2px -2px 8px rgba(0,0,0,0.5)' }}>
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 mb-8 font-light animate-fade-in drop-shadow-[0_20px_35px_rgba(0,0,0,1)]" style={{ animationDelay: "0.2s", textShadow: '8px 8px 16px rgba(0,0,0,1), 0 0 60px rgba(0,0,0,0.9), -3px -3px 12px rgba(0,0,0,0.7), 4px 4px 25px rgba(0,0,0,0.8)' }}>
             Peças para caminhões de alta qualidade. Especialistas em sistema pneumático e cardan.
           </h2>
           <p className="font-bebas text-3xl md:text-4xl lg:text-5xl text-accent mb-10 max-w-2xl mx-auto animate-fade-in tracking-wide" style={{ animationDelay: "0.4s" }}>
