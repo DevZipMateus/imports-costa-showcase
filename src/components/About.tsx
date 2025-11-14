@@ -12,7 +12,7 @@ const About = () => {
           </p>
           
           <div className="flex justify-center mb-12">
-            <img src={logoHistory} alt="Imports Costa Logo" className="h-57 w-auto" />
+            <img src={logoHistory} alt="Imports Costa Logo" className="h-50 w-auto" />
           </div>
 
           <div className="bg-card rounded-lg p-8 md:p-12 shadow-lg mb-12">
