@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -10,10 +10,10 @@ const Contact = () => {
       link: "https://wa.me/5567998391950"
     },
     {
-      icon: Mail,
-      title: "Email",
-      value: "importscosta@gmail.com",
-      link: "mailto:importscosta@gmail.com"
+      icon: Instagram,
+      title: "Instagram",
+      value: "@imports_costa_ms",
+      link: "https://www.instagram.com/imports_costa_ms"
     },
     {
       icon: MapPin,
