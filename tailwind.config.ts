@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         'oswald': ['Oswald', 'sans-serif'],
+        'bebas': ['Bebas Neue', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
