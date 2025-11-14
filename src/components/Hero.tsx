@@ -30,7 +30,7 @@ const Hero = () => {
           <h2 className="text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 mb-8 font-light animate-fade-in" style={{ animationDelay: "0.2s" }}>
             Peças para caminhões de alta qualidade. Especialistas em sistema pneumático e cardan.
           </h2>
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <p className="text-2xl md:text-3xl lg:text-4xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.4s" }}>
             Potência em movimento, com segurança.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
