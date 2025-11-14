@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/hero-truck.jpg";
+import heroBackground from "@/assets/hero-truck-sunset.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
