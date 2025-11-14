@@ -1,4 +1,5 @@
 import { Users, Heart, Award } from "lucide-react";
+import logoHistory from "@/assets/logo-history.png";
 
 const About = () => {
   return (
@@ -6,9 +7,13 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Nossa história</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
             Uma jornada de paixão, família e dedicação ao transporte rodoviário
           </p>
+          
+          <div className="flex justify-center mb-12">
+            <img src={logoHistory} alt="Imports Costa Logo" className="h-24 w-auto" />
+          </div>
 
           <div className="bg-card rounded-lg p-8 md:p-12 shadow-lg mb-12">
             <p className="text-lg leading-relaxed mb-6">
