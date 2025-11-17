@@ -25,14 +25,14 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-muted/30">
+    <section id="servicos" className="py-20 bg-primary">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Nossos serviços</h2>
-          <p className="text-center text-muted-foreground mb-4 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Nossos serviços</h2>
+          <p className="text-center text-white/80 mb-4 max-w-2xl mx-auto">
             Especialização em sistema pneumático e cardan
           </p>
-          <p className="text-center text-lg mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-lg mb-12 max-w-3xl mx-auto text-white/90">
             A Imports Costa atua no mercado de peças para caminhões, com especialização nos segmentos de sistema pneumático e sistema de cardan. Trabalhamos com importação e distribuição de componentes de alta qualidade, voltados para garantir a eficiência, a segurança e o desempenho dos veículos pesados.
           </p>
 
