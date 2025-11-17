@@ -17,29 +17,29 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 195 60% 28%;
+    --primary: 231 73% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 85 25% 40%;
+    --secondary: 131 77% 23%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 40 65% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 57 82% 47%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 195 60% 28%;
+    --ring: 231 73% 35%;
 
     --radius: 0.5rem;
     
-    --gradient-hero: linear-gradient(135deg, hsl(195 60% 28% / 0.95), hsl(195 60% 20% / 0.98));
-    --shadow-elegant: 0 10px 30px -10px hsl(195 60% 28% / 0.3);
+    --gradient-hero: linear-gradient(135deg, hsl(231 73% 35% / 0.95), hsl(231 73% 25% / 0.98));
+    --shadow-elegant: 0 10px 30px -10px hsl(231 73% 35% / 0.3);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -69,24 +69,24 @@ All colors MUST be HSL.
     --popover: 0 0% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 195 60% 35%;
+    --primary: 231 73% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 85 25% 45%;
+    --secondary: 131 77% 30%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 20%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 40 65% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 57 82% 55%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 195 60% 40%;
+    --ring: 231 73% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
