@@ -30,11 +30,11 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contato" className="py-20 bg-background">
+    <section id="contato" className="py-20 bg-accent">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Entre em contato</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-accent-foreground">Entre em contato</h2>
+          <p className="text-center text-accent-foreground/80 mb-12 max-w-2xl mx-auto">
             Estamos prontos para atender você. Entre em contato e descubra como podemos ajudar!
           </p>
 

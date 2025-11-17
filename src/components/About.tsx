@@ -3,11 +3,11 @@ import logoHistory from "@/assets/logo-history.png";
 
 const About = () => {
   return (
-    <section id="sobre" className="py-20 bg-muted/30">
+    <section id="sobre" className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Nossa história</h2>
-          <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Nossa história</h2>
+          <p className="text-center text-white/80 mb-8 max-w-2xl mx-auto">
             Uma jornada de paixão, família e dedicação ao transporte rodoviário
           </p>
           
