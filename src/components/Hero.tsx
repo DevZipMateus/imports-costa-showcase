@@ -1,9 +1,24 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/hero-truck-sunset.jpg";
+import heroCardan from "@/assets/hero-cardan-1.jpg";
+import heroValves from "@/assets/hero-valves-1.jpg";
+import heroWarehouse from "@/assets/hero-parts-warehouse.jpg";
+import heroMechanics from "@/assets/hero-mechanics-2.jpg";
 import { useNavigate } from "react-router-dom";
+
+const heroImages = [heroCardan, heroValves, heroWarehouse, heroMechanics];
 
 const Hero = () => {
   const navigate = useNavigate();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 3000);
+    
+    return () => clearInterval(interval);
+  }, []);
   
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -20,8 +35,16 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-40">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroBackground})` }}></div>
+    <section id="hero" className="relative min-h-screen flex items-center pt-40 overflow-hidden">
+      {heroImages.map((image, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+            index === currentImageIndex ? "opacity-100" : "opacity-0"
+          }`}
+          style={{ backgroundImage: `url(${image})` }}
+        />
+      ))}
       <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-black/15 to-transparent"></div>
       
       <div className="container mx-auto px-4 relative z-10">
