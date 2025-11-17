@@ -1,9 +1,7 @@
 import { Users, Heart, Award } from "lucide-react";
 import logoHistory from "@/assets/logo-history.png";
-
 const About = () => {
-  return (
-    <section id="sobre" className="py-20 bg-background">
+  return <section id="sobre" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Nossa história</h2>
@@ -12,7 +10,7 @@ const About = () => {
           </p>
           
           <div className="flex justify-center mb-12">
-            <img src={logoHistory} alt="Imports Costa Logo" className="h-50 w-auto" />
+            <img src={logoHistory} alt="Imports Costa Logo" className="h-74 w-auto " />
           </div>
 
           <div className="bg-card rounded-lg p-8 md:p-12 shadow-lg mb-12">
@@ -63,8 +61,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
