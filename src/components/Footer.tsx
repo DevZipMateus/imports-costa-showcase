@@ -4,22 +4,22 @@ import logo from "@/assets/logo.png";
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Logo e Slogan */}
-          <div className="space-y-4">
-            <div className="bg-white rounded-full w-32 h-32 flex items-center justify-center p-4">
+          <div className="space-y-3 sm:space-y-4 flex flex-col items-center sm:items-start">
+            <div className="bg-white rounded-full w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center p-3 sm:p-4">
               <img src={logo} alt="Importadora Costa" className="w-full h-full object-contain" />
             </div>
-            <p className="text-sm opacity-90">
+            <p className="text-xs sm:text-sm opacity-90 text-center sm:text-left">
               Potência em movimento, com segurança.
             </p>
           </div>
 
           {/* Contato */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Contato</h3>
-            <div className="space-y-3 text-sm">
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-base sm:text-lg font-semibold">Contato</h3>
+            <div className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
               <a
                 href="tel:67998391950"
                 className="flex items-start gap-2 hover:opacity-80 transition-opacity"
@@ -47,9 +47,9 @@ const Footer = () => {
           </div>
 
           {/* Localização */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Localização</h3>
-            <div className="space-y-3 text-sm">
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-base sm:text-lg font-semibold">Localização</h3>
+            <div className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>Avenida Julio Ferreira Xavier Nº 4505</span>
@@ -58,9 +58,9 @@ const Footer = () => {
           </div>
 
           {/* Horário */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Horário de funcionamento</h3>
-            <div className="flex items-start gap-2 text-sm">
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-base sm:text-lg font-semibold">Horário de funcionamento</h3>
+            <div className="flex items-start gap-2 text-xs sm:text-sm">
               <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" />
               <div>
                 <p>Segunda a Sexta</p>
@@ -71,8 +71,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center text-sm opacity-90">
-          <p>
+        <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-primary-foreground/20 text-center text-xs sm:text-sm opacity-90">
+          <p className="px-2">
             &copy; {new Date().getFullYear()} Importadora e Distribuidora Costa LTDA - CNPJ: 55.045.342/0001-10
           </p>
         </div>
