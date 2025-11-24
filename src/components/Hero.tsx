@@ -1,12 +1,21 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import heroCardan from "@/assets/hero-cardan-1.jpg";
-import heroValves from "@/assets/hero-valves-1.jpg";
-import heroWarehouse from "@/assets/hero-parts-warehouse.jpg";
-import heroMechanics from "@/assets/hero-mechanics-2.jpg";
+import heroParts1 from "@/assets/hero-parts-1.png";
+import heroParts2 from "@/assets/hero-parts-2.png";
+import heroParts3 from "@/assets/hero-parts-3.png";
+import heroParts4 from "@/assets/hero-parts-4.png";
+import heroParts5 from "@/assets/hero-parts-5.png";
+import heroParts6 from "@/assets/hero-parts-6.png";
+import heroParts7 from "@/assets/hero-parts-7.png";
+import heroParts8 from "@/assets/hero-parts-8.png";
+import heroParts9 from "@/assets/hero-parts-9.png";
+import heroParts10 from "@/assets/hero-parts-10.png";
 import { useNavigate } from "react-router-dom";
 
-const heroImages = [heroCardan, heroValves, heroWarehouse, heroMechanics];
+const heroImages = [
+  heroParts1, heroParts2, heroParts3, heroParts4, heroParts5,
+  heroParts6, heroParts7, heroParts8, heroParts9, heroParts10
+];
 
 const Hero = () => {
   const navigate = useNavigate();
