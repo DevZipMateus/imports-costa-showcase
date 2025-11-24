@@ -41,49 +41,49 @@ const Values = () => {
   ];
 
   return (
-    <section id="valores" className="py-20 bg-secondary">
-      <div className="container mx-auto px-4">
+    <section id="valores" className="py-12 sm:py-16 md:py-20 bg-secondary">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Missão, visão e valores</h2>
-          <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4 text-white">Missão, visão e valores</h2>
+          <p className="text-sm sm:text-base text-center text-white/80 mb-8 sm:mb-12 max-w-2xl mx-auto px-2">
             Os princípios que guiam nosso trabalho e nosso compromisso com você
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-card rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            <div className="bg-card rounded-lg p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className={`w-16 h-16 ${mission.bgColor} rounded-full flex items-center justify-center mb-6`}>
                 <mission.icon className={mission.color} size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">{mission.title}</h3>
-              <p className="text-lg leading-relaxed text-muted-foreground">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{mission.title}</h3>
+              <p className="text-sm sm:text-base md:text-lg leading-relaxed text-muted-foreground">
                 {mission.description}
               </p>
             </div>
 
-            <div className="bg-card rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-card rounded-lg p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className={`w-16 h-16 ${vision.bgColor} rounded-full flex items-center justify-center mb-6`}>
                 <vision.icon className={vision.color} size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">{vision.title}</h3>
-              <p className="text-lg leading-relaxed text-muted-foreground">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{vision.title}</h3>
+              <p className="text-sm sm:text-base md:text-lg leading-relaxed text-muted-foreground">
                 {vision.description}
               </p>
             </div>
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-center mb-8">Nossos valores</h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8">Nossos valores</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {values.map((value, index) => (
                 <div 
                   key={index}
-                  className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow text-center"
+                  className="bg-card rounded-lg p-4 sm:p-6 shadow-md hover:shadow-lg transition-shadow text-center"
                 >
                   <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <value.icon className="text-secondary" size={28} />
                   </div>
-                  <h4 className="text-lg font-semibold mb-3">{value.title}</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">{value.title}</h4>
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                     {value.description}
                   </p>
                 </div>

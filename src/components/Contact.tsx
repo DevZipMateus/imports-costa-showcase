@@ -30,58 +30,59 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contato" className="py-20 bg-accent">
-      <div className="container mx-auto px-4">
+    <section id="contato" className="py-12 sm:py-16 md:py-20 bg-accent">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-accent-foreground">Entre em contato</h2>
-          <p className="text-center text-accent-foreground/80 mb-12 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4 text-accent-foreground">Entre em contato</h2>
+          <p className="text-sm sm:text-base text-center text-accent-foreground/80 mb-8 sm:mb-12 max-w-2xl mx-auto px-2">
             Estamos prontos para atender você. Entre em contato e descubra como podemos ajudar!
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
             {contactInfo.map((info, index) => (
               <div 
                 key={index}
-                className="bg-card rounded-lg p-6 shadow-md text-center hover:shadow-lg transition-shadow"
+                className="bg-card rounded-lg p-4 sm:p-6 shadow-md text-center hover:shadow-lg transition-shadow"
               >
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <info.icon className="text-primary" size={24} />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <info.icon className="text-primary" size={20} />
                 </div>
-                <h3 className="font-semibold mb-2">{info.title}</h3>
+                <h3 className="text-sm sm:text-base font-semibold mb-2">{info.title}</h3>
                 {info.link ? (
                   <a 
                     href={info.link}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors break-words"
                     target={info.link.startsWith('http') ? '_blank' : undefined}
                     rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                   >
                     {info.value}
                   </a>
                 ) : (
-                  <p className="text-muted-foreground">{info.value}</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{info.value}</p>
                 )}
               </div>
             ))}
           </div>
 
-          <div className="bg-card rounded-lg p-8 shadow-lg">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold mb-3">Fale conosco pelo WhatsApp</h3>
-              <p className="text-muted-foreground mb-6">
+          <div className="bg-card rounded-lg p-4 sm:p-6 md:p-8 shadow-lg">
+            <div className="text-center mb-6 sm:mb-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3">Fale conosco pelo WhatsApp</h3>
+              <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 px-2">
                 Tire suas dúvidas, solicite orçamentos ou faça seu pedido diretamente pelo WhatsApp
               </p>
               <Button 
                 size="lg"
                 asChild
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 sm:px-8 w-full sm:w-auto"
               >
                 <a 
                   href="https://wa.me/5567998391950"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="flex items-center justify-center"
                 >
-                  <Phone className="mr-2" size={20} />
-                  Conversar no WhatsApp
+                  <Phone className="mr-2" size={18} />
+                  <span className="text-sm sm:text-base">Conversar no WhatsApp</span>
                 </a>
               </Button>
             </div>
